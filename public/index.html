@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Demo of privpol-captcha</title>
+    <title>Demo page of privpol-captcha</title>
     <link href="assets/vendor/Quttons/Quttons.css" rel="stylesheet">
 </head>
 <body>
-
+<div id="privpolCaptcha">
+    <h2>Demo question</h2>
+    <form data-parsley-validate>
+    <input type="text" name="privpolCaptchaAnswer" placeholder="Type your answer here">
+    <button name="privpolCaptchaValidate">Validate</button>
+    </form>
+</div>
 <script src="assets/vendor/jquery/dist/jquery.js"></script>
 <script src="assets/vendor/velocity/velocity.js"></script>
 <script src="assets/vendor/velocity/velocity.ui.js"></script>
