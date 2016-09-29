@@ -3,19 +3,33 @@
 <head>
     <meta charset="utf-8">
     <title>Demo page of privpol-captcha</title>
+    <link type="text/css" rel="stylesheet" href="assets/vendor/materialize/dist/css/materialize.css"  media="screen,projection"/>
     <link href="assets/vendor/Quttons/Quttons.css" rel="stylesheet">
+    <
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-<div id="privpolCaptcha">
+<div id="privpolCaptcha" class="qutton">
     <h2>Demo question</h2>
-    <form data-parsley-validate>
-    <input type="text" name="privpolCaptchaAnswer" placeholder="Type your answer here">
-    <button name="privpolCaptchaValidate">Validate</button>
+    <form data-parsley-validate class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="privpolCaptchaAnswer" type="text" class="validate">
+                <label for="privpolCaptchaAnswer">Enter your answer here</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <a id="privpolCaptchaValidate" class="waves-effect waves-light btn">Validate</a>
+            </div>
+        </div>
     </form>
 </div>
 <script src="assets/vendor/jquery/dist/jquery.js"></script>
+<script src="assets/vendor/materialize/dist/js/materialize.js"></script>
 <script src="assets/vendor/velocity/velocity.js"></script>
 <script src="assets/vendor/velocity/velocity.ui.js"></script>
 <script src="assets/vendor/Quttons/Quttons.js"></script>
+<script src="assets/vendor/parsleyjs/dist/parsley.js"></script>
 </body>
 </html>
